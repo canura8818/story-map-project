@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tatar's Story Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <main>
+    <div class="map-container">
+      <div class="map" id="map"></div>
+    </div>
+    
+    <div id="erosion-panel" class="scenario-panel hidden">
+      <h3>Coastal Hazards</h3>
+      <label><input type="checkbox" value="coastalErosion_0.5ft"> 0.5ft Sea Level Rise</label>
+      <label><input type="checkbox" value="coastalErosion_1.1Ft"> 1.1ft Sea Level Rise</label>
+      <label><input type="checkbox" value="coastalErosion_2Ft"> 2.0ft Sea Level Rise</label>
+      <label><input type="checkbox" value="coastalErosion_3.2Ft"> 3.2ft Sea Level Rise</label>
+    </div>
+
+    <section class="slide-section">
+      <article class="slide" id="title-slide">
+        <h1>Threat of Climate Change on O'ahu Waterfront Development</h1>
+        <p>O'ahu is home to Hawaii's capital, Honolulu. The city has the highest population density in the state (>5,000 people / sq mi).
+          The capital is also the economic hub and the state's travel gateway, welcoming over 5.6 million people per year, with no sign of stopping.
+        </p>
+        <p>
+          Naturally, this means there is extensive waterfront development in Honolulu and around O'ahu to accomodate the local and seasonal populations.
+          However, in the face of climate change, these waterfronts are the most at risk. Key areas such as Honolulu and the airport are projected to be submerged
+          or face intense flooding by 2050 to 2100. This study will analyze the current population distribution, land use, zoning, and identify areas where the island
+          can expand to prepare for the future.
+        </p>
+      </article>
+
+      <article class="slide" id="2020_Census_Tracts">
+        <h1>Population by Census Tract</h1>
+        <ul>
+          <li>Red tracts have a population > 5,000</li>
+          <li>Blue tracts have a population < 5,000</li>
+        </ul>
+        <p>
+          The interior of the island is mountanous, while the coastal areas are more suitable for residential and commercial development
+          This forces the majority of the population to stay in lower areas near the waterfront. The waterfront area of Honolulu seems to be mostly commercial with
+          many residents choosing to live further away. The highest population is in the National Historic Site, although that tract is one of the largest.
+        </p>
+      </article>
+
+      <article class="slide" id="zoning">
+        <h2>Zoning Ordinance</h2>
+        <p>
+          Large areas are preserved for agriculture and environmental protection, which mainly spans the center of the island and towards the northern end.
+          Residential areas are spread around the base of the mountain and towards the waterfront. This zoning code promotes development along the southern
+          part of the island while the northern end is reserved for conservation. It also discourages industrial growth, while limiting large commercial areas.
+          To diversify the economy and efficiently use the land, mixed-use zoning should be encouraged and develop more business zones near inland residential areas.
+          This zoning code was from 2025.
+        </p>
+      </article>
+
+      <article class="slide" id="LULC">
+        <h3>Land Use</h3>
+        <p>
+          Many of these residential areas have access to the beach, which may be under threat depending on the future climate scenario. The harbor is heavily residential. Industrial areas are sparse
+          and businesses are gathered near heavy residential zones, especially around the waterfront. One thing to keep note of is that this land cover data is from 1977, which are extremely outdated.
+          There are satellite data available online, but having an updated version in the state's open data portal would be beneficial for those conducting geospatial analyses. The first sea-level rise
+          scenario poses little threat to the island, but the 3.2 feet scenario cuts into many beach access points, which will reduce quality of life, damage property value, and increase the risk of environmental hazards. 
+        </p>
+      </article>
+
+      <article class="slide" id="takeaway-slide">
+        <h4>Key Takeaways</h4>
+        <p>
+          The threats to O'ahu's properties are mainly limited to the beach and waterfront areas. Most sea-rise scenarios are unconcerning, but the 3.2 feet rise can reduce beach access
+          of such properties, especially in the eastern part of the island. Most residential areas creep inland towards the preserved natural areas where sea-level rise is less of a concern.
+          Housing development will also be occuring in the southern half of the island, as the northern half will be preserved for agriculture and environmental usage. However, this analysis is 
+          limited by the outdated land cover data. With more recent land use data, a more accurate spatial representation can be achieved.
+        </p>
+        <p>
+          The state should try to up-zone residential areas that are away from the water to free up land to build barriers that will protect development from potential environmental hazards.
+          Further study should incorporate tax parcel data and population densities to track growth across time and get projections for the future.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>
