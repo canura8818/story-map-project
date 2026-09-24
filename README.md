@@ -10,7 +10,7 @@ The target audience for this project are policy developers who are interested in
 change on a  geospatial level. This story map explores population and development on the island of O'ahu, looking at past data and present policies to better understand what is in store for the future.
 
 Website Link:
-httpss://canura8818.github.io/story-map-project/
+https://canura8818.github.io/story-map-project/
 
 Data Sources:
 https://opendata.hawaii.gov/group/geospatial
